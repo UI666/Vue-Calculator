@@ -50,7 +50,7 @@
                 }
                 else if(button.type == 'operator'){
                     this.displayData = Number((Number(this.inputData) + ((Number(this.taxNumber)*Number(this.inputData))/100)).toFixed(2));
-                    this.inputData = '0';
+                    /*this.inputData = '0';*/
                 }
             },
             clearInput(){
