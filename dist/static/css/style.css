@@ -1,0 +1,178 @@
+
+/*.............Full Display.............*/
+body{
+  background: url("./assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*..................Calculator..............*/
+.calculator{
+  width: 25vw;
+  height: 90vh;
+  font-family: "Maiandra GD";
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 50px 1px #3c4253;
+}
+
+
+/*.............Calculator Output Display............*/
+.display{
+  background: #5f5ffe;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  flex: 3;
+}
+.display h1{
+  padding-top: 25%;
+  font-size: 12px;
+  margin: 0px;
+}
+.display p{
+  padding-bottom: 10%;
+  font-size: 50px;
+  margin: 0px;
+}
+
+
+
+
+/*............Calculator Input Display...........*/
+/*.......................Start...................*/
+/*............[Tax Show][Input][Clear Button]..........*/
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+
+/*...................Tax Show...................*/
+.tax{
+  /*position: fixed;
+  top: 37.5vh;
+  height: 12.5vh;
+  width: 7vw;*/
+  background: #72da6b;
+  box-shadow: 0 0 10px 1px #3f4a5a;
+  text-transform: uppercase;
+  color: white;
+  flex: 1;
+}
+.tax h1{
+  padding: 30% 25% 0% 25%;
+  font-size: 10px;
+  margin: 0px;
+}
+.tax p{
+  padding: 0% 25% 20% 25%;
+  font-size: 25px;
+  margin: 0px;
+}
+
+
+/*..................Input................*/
+.input{
+  background: white;
+  text-transform: uppercase;
+  max-width: 165px;
+  color: gray;
+  flex: 2;
+  /*margin-left: 27%;*/
+}
+.input h1{
+  padding-left: 8%;
+  padding-top: 7%;
+  font-size: 10px;
+  margin: 0px;
+}
+.input p{
+  padding-left: 7%;
+  font-size: 30px;
+  margin: 0px;
+}
+
+
+/*.....................Clear Button..............*/
+.button-holder{
+  background: white;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.clear-button{
+  height: 3vh;
+  border-radius: 50px;
+  border-style: none;
+}
+
+/*............Calculator Input Display...........*/
+/*........................End....................*/
+
+
+
+
+
+/*................All Buttons....................*/
+.buttons{
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  flex: 4;
+}
+.button-row{
+  display: flex;
+  height: 25%;
+}
+.button{
+  display: flex;
+  /*border: 0.001em solid darkgrey;*/
+  box-shadow: 0 0 1px 1px #3f4a5a;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background: #3c4253;
+  color: white;
+}
+.button:hover{
+  background: #404758;
+  overflow: hidden;
+  position: relative;
+  cursor: context-menu;
+  box-shadow: 0 0 10px 1px black;
+              /*0 0 8px rgba(255,255,255,1),
+              0 0 15px rgba(255,255,255,1),
+              0 0 0 30px rgba(255,255,255,0.15),
+              0 0 0 20px rgba(255,255,255,0.15),
+              0 0 0 10px rgba(255,255,255,0.15);*/
+}
+
+
+/*...................Operator............*/
+.operator{
+  background-image: url("./assets/operator.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  background-size: 25px 20px;
+}
+.operator:hover{
+  background-image: url("./assets/operator.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  background-size: 25px 20px;
+  box-shadow: 0 0 10px 1px black;
+}
